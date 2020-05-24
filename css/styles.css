@@ -114,7 +114,7 @@
 
 .s3 .card {
   width: 400px;
-  height: 250px;
+  height: 270px;
   background-color: rgba(255, 159, 104, 0.8);
 }
 
@@ -129,8 +129,8 @@
 }
 
 .s3 .card-text {
-  font-size: 1.3em;
-  color: #3f4100;
+  font-size: 1.4em;
+  color: #10316b;
 }
 
 /**************** section 4 ****************/
@@ -142,4 +142,122 @@
   top: 5%;
   left: 10%;
   color: rgb(179, 179, 179);
+}
+
+.s4 .title  {
+  position: absolute;
+  color: rgb(179, 179, 179);
+  left: 10%;
+}
+
+.s4 .card {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  /* background-color: rgba(128, 128, 128); */
+  background-color: white;
+}
+
+.s4 .language-title {
+  top: 20%;
+}
+
+.s4 .languages {
+  position: absolute;
+  top: 27%;
+  left: 10%;
+  display: flex;
+}
+
+.s4 .language .card :nth-child(even) {
+  background-color: black;
+}
+
+.s4 .language + .language {
+  margin-left: 40px;
+}
+
+.s4 .framework-title {
+  top: 45%;
+}
+
+.s4 .frameworks {
+  position: absolute;
+  top: 52%;
+  left: 10%;
+  display: flex;
+}
+
+.s4 .framework + .framework {
+  margin-left: 40px;
+}
+
+.s4 .tool-title {
+  top: 70%;
+}
+
+.s4 .tools {
+  position: absolute;
+  top: 77%;
+  left: 10%;
+  display: flex;
+}
+
+.s4 .tool + .tool {
+  margin-left: 40px;
+}
+
+.s4 img {
+  width: 50px;
+  height: 50px;
+}
+
+/**************** section 5 ****************/
+.s5 {
+  background-image: url(../img/bg5.jpg);
+}
+
+.s5 h1 {
+  top: 5%;
+  left: 10%;
+  color: white;
+}
+
+.s5 .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 50px;
+  row-gap: 25px;
+}
+
+.s5 .contact {
+  width: 300px;
+  height: 75px;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.s5 .contact:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.s5 .contact img {
+  width: 40px;
+}
+
+.s5 .contact .info {
+  padding-left: 20px;
+  font-size: larger;
+  color: black;
 }
