@@ -1,106 +1,136 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .section {
-    background-size: cover;
-    background-position: center;
+  background-size: cover;
+  background-position: center;
 }
 
 .section h1 {
-    position: absolute;
-    font-size: 56px;
-    font-weight: 600;
-    font-family: 'Rock Salt', cursive;
+  position: absolute;
+  font-size: 56px;
+  font-weight: 600;
+  font-family: "Rock Salt", cursive;
 }
 
 .section .content {
-    font-family: 'Rancho', cursive;
+  font-family: "Rancho", cursive;
 }
 
 /**************** section 1 ****************/
 .s1 {
-    background-image: url(../img/bg1.jpg);
+  background-image: url(../img/bg1.jpg);
 }
 
 .s1 h1 {
-    top: 20%;
-    left: 40%;
-    color: rgba(80, 15, 15, 0.781);
+  top: 20%;
+  left: 40%;
+  color: rgba(80, 15, 15, 0.781);
 }
 
 .s1 .content {
-    position: absolute;
-    top: 40%;
-    left: 40%;
-    width: 50%;
-    font-size: 32px;
-    color: darkslategrey;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  width: 50%;
+  font-size: 32px;
+  color: darkslategrey;
 }
 
 .s1 .content p + p {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 /**************** section 2 ****************/
 .s2 {
-    background-image: url(../img/bg2.jpg);
+  background-image: url(../img/bg2.jpg);
 }
 
 .s2 h1 {
-    top: 20%;
-    left: 5%;
-    color: rgb(33, 108, 151);
+  top: 20%;
+  left: 5%;
+  color: rgb(33, 108, 151);
 }
 
 .s2 .content {
-    display: flex;
-    justify-content: space-evenly;
-    position: relative;
-    top: 75px;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  top: 75px;
 }
 
 .s2 .card {
-    width: 500px;
-    height: 160px;
+  width: 500px;
+  height: 160px;
 }
 
 .s2 .card-title {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .s2 .type {
-    font-size: 32px;
-    font-weight: 700;
+  font-size: 32px;
+  font-weight: 700;
 }
 
 .s2 .duration {
-    font-size: 24px;
-    font-weight: 500;
-    margin-left: auto;
+  font-size: 24px;
+  font-weight: 500;
+  margin-left: auto;
 }
 
 .s2 .card-text {
-    font-size: 28px;
-    font-weight: 400;
+  font-size: 28px;
+  font-weight: 400;
 }
 
 .s2 .card-link {
-    float: right;
-    font-size: 20px;
-    margin: 0 10px 10px 0;
+  float: right;
+  font-size: 20px;
+  margin: 0 10px 10px 0;
+}
+
+/**************** section 3 ****************/
+.s3 {
+  background-image: url(../img/bg3.jpg);
+}
+
+.s3 h1 {
+  top: 5%;
+  left: 10%;
+}
+
+.s3 .content {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.s3 .card {
+  width: 400px;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.s3 .card-title {
+  font-size: 1.5em;
+}
+
+.s3 .card-text {
+  margin-top: 5px;
+  font-size: 1.3em;
 }
 
 /**************** section 4 ****************/
 .s4 {
-    background-image: url(../img/bg4.jpg);
+  background-image: url(../img/bg4.jpg);
 }
 
 .s4 h1 {
-    top: 5%;
-    left: 10%;
-    color: rgb(179, 179, 179);
+  top: 5%;
+  left: 10%;
+  color: rgb(179, 179, 179);
 }
