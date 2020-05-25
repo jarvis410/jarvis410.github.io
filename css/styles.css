@@ -261,3 +261,19 @@
   font-size: larger;
   color: black;
 }
+
+/************************ fade effect **********************/
+.fp-section {
+	width: 100% !important;
+	position: absolute;
+	left: 0;
+	top: 0;
+	visibility: hidden;
+	opacity: 0;
+	transition: all .9s ease-in-out;
+}
+
+.fp-section.active {
+	visibility: visible;
+	opacity: 1;
+}
