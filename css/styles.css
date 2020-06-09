@@ -11,13 +11,17 @@
 
 .section h1 {
   position: absolute;
-  font-size: 56px;
+  font-size: 4vw;
   font-weight: 600;
   font-family: "Rock Salt", cursive;
 }
 
 .section .content {
   font-family: "Rancho", cursive;
+}
+
+.content {
+  overflow: auto;
 }
 
 /**************** section 1 ****************/
@@ -36,7 +40,7 @@
   top: 40%;
   left: 40%;
   width: 50%;
-  font-size: 32px;
+  font-size: 2vw;
   color: darkslategrey;
 }
 
@@ -124,8 +128,8 @@
 }
 
 .s3 .card-subtitle {
-    font-size: 1.3em;
-    color: black;
+  font-size: 1.3em;
+  color: black;
 }
 
 .s3 .card-text {
@@ -144,7 +148,7 @@
   color: rgb(179, 179, 179);
 }
 
-.s4 .title  {
+.s4 .title {
   position: absolute;
   color: rgb(179, 179, 179);
   left: 10%;
@@ -264,16 +268,16 @@
 
 /************************ fade effect **********************/
 .fp-section {
-	width: 100% !important;
-	position: absolute;
-	left: 0;
-	top: 0;
-	visibility: hidden;
-	opacity: 0;
-	transition: all .9s ease-in-out;
+  width: 100% !important;
+  position: absolute;
+  left: 0;
+  top: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.9s ease-in-out;
 }
 
 .fp-section.active {
-	visibility: visible;
-	opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }

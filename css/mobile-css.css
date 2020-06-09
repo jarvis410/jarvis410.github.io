@@ -1,0 +1,272 @@
+@media only screen and (max-width: 1200px) {
+  .section h1 {
+    font-size: 7vw;
+  }
+
+  .content {
+    overflow: auto;
+  }
+
+  #fp-nav.fp-right {
+    right: 2vw !important;
+  }
+
+  .card-body {
+    padding: 10px !important;
+  }
+
+  hr {
+    margin: 5px 0px !important;
+  }
+
+  /**************** section 1 ****************/
+  .s1 h1 {
+    top: 5vh;
+    left: 10vw;
+  }
+
+  .s1 .content {
+    top: 30vh;
+    left: 15vw;
+    width: 75vw;
+    font-size: 5vw;
+  }
+
+  .s1 .content p + p {
+    margin-top: 2vh;
+  }
+
+  /**************** section 2 ****************/
+  .s2 h1 {
+    top: 5vh;
+    left: 30vw;
+  }
+
+  .s2 .content {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    row-gap: 3vh;
+  }
+
+  .s2 .card {
+    width: 80vw;
+    height: auto;
+  }
+
+  .s2 .card-title {
+    display: flex;
+    align-items: center;
+  }
+
+  .s2 .type {
+    font-size: 5vw;
+    font-weight: 700;
+  }
+
+  .s2 .duration {
+    font-size: 4vw;
+    font-weight: 500;
+    margin-left: auto;
+  }
+
+  .s2 .card-text {
+    font-size: 4.5vw;
+    font-weight: 400;
+  }
+
+  .s2 .card-link {
+    float: right;
+    font-size: 3.5vw;
+    margin: 0 5px 5px 0 !important;
+  }
+
+  /**************** section 3 ****************/
+  .s3 h1 {
+    top: 5vh;
+    left: 20vw;
+  }
+
+  .s3 .content {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    row-gap: 2vh;
+  }
+
+  .s3 .card {
+    width: 80vw;
+    height: auto;
+  }
+
+  .s3 .card-title {
+    font-size: 5vw;
+  }
+
+  .s3 .card-subtitle {
+    font-size: 4vw;
+  }
+
+  .s3 .card-text {
+    font-size: 4.5vw;
+  }
+
+  /**************** section 4 ****************/
+  .s4 {
+    background-image: url(../img/bg4.jpg);
+  }
+
+  .s4 h1 {
+    top: 5%;
+    left: 10%;
+    color: rgb(179, 179, 179);
+  }
+
+  .s4 .title {
+    position: absolute;
+    color: rgb(179, 179, 179);
+    left: 10%;
+  }
+
+  .s4 .card {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: rgba(128, 128, 128); */
+    background-color: white;
+  }
+
+  .s4 .language-title {
+    top: 20%;
+  }
+
+  .s4 .languages {
+    position: absolute;
+    top: 27%;
+    left: 10%;
+    display: flex;
+  }
+
+  .s4 .language .card :nth-child(even) {
+    background-color: black;
+  }
+
+  .s4 .language + .language {
+    margin-left: 40px;
+  }
+
+  .s4 .framework-title {
+    top: 45%;
+  }
+
+  .s4 .frameworks {
+    position: absolute;
+    top: 52%;
+    left: 10%;
+    display: flex;
+  }
+
+  .s4 .framework + .framework {
+    margin-left: 40px;
+  }
+
+  .s4 .tool-title {
+    top: 70%;
+  }
+
+  .s4 .tools {
+    position: absolute;
+    top: 77%;
+    left: 10%;
+    display: flex;
+  }
+
+  .s4 .tool + .tool {
+    margin-left: 40px;
+  }
+
+  .s4 img {
+    width: 50px;
+    height: 50px;
+  }
+
+  /**************** section 5 ****************/
+  .s5 {
+    background-image: url(../img/bg5.jpg);
+  }
+
+  .s5 h1 {
+    top: 5%;
+    left: 10%;
+    color: white;
+  }
+
+  .s5 .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+    row-gap: 25px;
+  }
+
+  .s5 .contact {
+    width: 300px;
+    height: 75px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+  .s5 .contact:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  .s5 .contact img {
+    width: 40px;
+  }
+
+  .s5 .contact .info {
+    padding-left: 20px;
+    font-size: larger;
+    color: black;
+  }
+
+  /************************ fade effect **********************/
+  .fp-section {
+    width: 100% !important;
+    position: absolute;
+    left: 0;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.9s ease-in-out;
+  }
+
+  .fp-section.active {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  .owl-item.cloned {
+    display: none !important;
+  }
+  .owl-stage {
+    transform: none !important;
+    transition: none !important;
+    width: auto !important;
+  }
+  .owl-item {
+    width: auto !important;
+  }
+}
