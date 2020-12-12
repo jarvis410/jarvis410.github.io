@@ -1,273 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/mobile-css.css">
-    <link rel="stylesheet" href="./css/fullpage.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rancho&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Parth Makadiya</title>
-</head>
+  </head>
 
-<body>
-    <div id="fullpage">
-        <section class="section s1">
-            <h1>Parth Makadiya</h1>
-            <div class="content">
-                <p>Software Developer with experience in Spring, Spring Data JPA, Angular, JSP, MySQL. Developing
-                    interest in Web Design (UI/UX).</p>
-                <p>Coming up next... React, Android, Docker with Kubernetes, AWS services, and much more</p>
+  <body>
+    <div class="container">
+      <section class="hero">
+        <div class="intro center-col">
+          <h2 class="greetings">hi there!</h2>
+          <h1>I am Parth Makadiya</h1>
+          <p class="work">Fullstack Web Developer</p>
+        </div>
+        <div class="skills-overview center-row">
+          <img src="./svg/springio-icon.svg" alt="spring" />
+          <img src="./svg/angular-icon.svg" alt="angular" />
+          <img src="./svg/mysql-icon.svg" alt="mysql" />
+          <img src="./svg/adobe-xd.svg" alt="adobe-xd" />
+        </div>
+        <a class="more" href="#more-skills">more skills</a>
+      </section>
+
+      <section>
+        <h3>Let's Connect</h3>
+        <div class="contacts">
+          <a
+            class="contact"
+            href="https://www.linkedin.com/in/parth-makadiya-4065a915a/"
+          >
+            <img src="./svg/linkedin-icon-2.svg" alt="linkedin-icon" />
+            <p class="info">Parth Makadiya</p>
+          </a>
+          <a class="contact" href="mailto:makadiyaparth98@gmail.com">
+            <img src="./svg/gmail-icon.svg" alt="gmail-icon" />
+            <p class="info">makadiyaparth98@gmail.com</p>
+          </a>
+          <div class="contact" href="mailto:makadiyaparth98@gmail.com">
+            <img src="./svg/call-icon.svg" alt="call-icon" />
+            <p class="info">+91 635 293 5259</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h3>Experiences</h3>
+        <div class="experiences">
+          <div class="experience">
+            <div class="post">
+              <h4 class="title">Java Developer</h4>
+              <p class="duration">Jun 2020 - Present (7 mos)</p>
             </div>
-        </section>
-        <section class="section s2">
-            <h1>Education</h1>
-            <div class="content">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="card-title">
-                            <div class="type">Higher Secondary Certificate</div>
-                            <div class="duration">2014 - 2015</div>
-                        </div>
-                        <div class="card-text">P. P. Savani Chaitanya Vidya Sankul, Surat</div>
-                        <a href="http://ppsavanicbse.org/about-ppscvs" target=”_blank” class="card-link">Website</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <div class="card-title">
-                            <div class="type">B.E. in Computer Engineering</div>
-                            <div class="duration">2015 - 2019</div>
-                        </div>
-                        <div class="card-text">Babaria Institute of Technology, Vadodara</div>
-                        <a href="https://bitstechnology.org/" target=”_blank” class="card-link">Website</a>
-                    </div>
-                </div>
+            <p class="place">Neptune Ubicom Pvt. Ltd., Pune</p>
+            <hr />
+            <p class="info">
+              Working as a full time developer building web application in an
+              agile way.
+            </p>
+          </div>
+          <div class="experience">
+            <div class="post">
+              <h4 class="title">Graduate Trainee</h4>
+              <p class="duration">Jun 2019 - Jun 2020 (1 yr 1 mo)</p>
             </div>
-        </section>
-        <section class="section s3">
-            <h1>Experiences</h1>
-            <div class="content">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Spring Framework Session</h5>
-                        <h6 class="card-subtitle">Babaria Institute of Technology, Vadodara</h6>
-                        <hr>
-                        <p class="card-text">Delivered an overview and hands-on session of Spring Framework. Idea was to
-                            make audience familiar with Spring Framework and this advantages.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Project Trainee</h5>
-                        <h6 class="card-subtitle">Paul Mason Consulting India Private Limited</h6>
-                        <hr>
-                        <p class="card-text">Worked on live projects for 8 months. Hands-on Struts, Spring Framework,
-                            Hibernate, JSP, MySQL.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Graduate Trainee</h5>
-                        <h6 class="card-subtitle">Paul Mason Consulting India Private Limited</h6>
-                        <hr>
-                        <p class="card-text">Worked with multiple projects with technologies and services like Spring,
-                            Hibernate, Angular, NodeJS and AWS.</p>
-                    </div>
-                </div>
+            <p class="place">Paul Mason Consulting India Pvt. Ltd., Vadodara</p>
+            <hr />
+            <p class="info">
+              Worked with multiple projects with technologies and services like
+              Spring, Hibernate, Angular, NodeJS and AWS.
+            </p>
+          </div>
+          <div class="experience">
+            <div class="post">
+              <h4 class="title">Spring Framework Session</h4>
+              <p class="duration">3 hrs</p>
             </div>
-        </section>
-        <section class="section s4">
-            <h1>Skills</h1>
-            <div class="content">
-                <h2 class="title language-title">Languages</h2>
-                <div class="languages">
-                    <div class="language">
-                        <div class="card">
-                            <img src="./svg/java-icon.svg" alt="Java">
-                        </div>
-                    </div>
-                    <div class="language">
-                        <div class="card">
-                            <img src="./svg/javascript.svg" alt="JavaScript">
-                        </div>
-                    </div>
-                    <div class="language">
-                        <div class="card">
-                            <img src="./svg/typescriptlang-icon.svg" alt="TypeScript">
-                        </div>
-                    </div>
-                    <div class="language">
-                        <div class="card">
-                            <img src="./svg/kotlinlang-icon.svg" alt="Kotlin">
-                        </div>
-                    </div>
-                    <div class="language">
-                        <div class="card">
-                            <img src="./svg/python-5.svg" alt="Python">
-                        </div>
-                    </div>
-                    <div class="language">
-                        <div class="card">
-                            <img src="./svg/mysql-icon.svg" alt="MySQL">
-                        </div>
-                    </div>
-                    <div class="language">
-                        <div class="card">
-                            <img src="./svg/html5.svg" alt="HTML">
-                        </div>
-                    </div>
-                    <div class="language">
-                        <div class="card">
-                            <img src="./svg/css-3.svg" alt="CSS3">
-                        </div>
-                    </div>
-                    <div class="language">
-                        <div class="card">
-                            <img src="./svg/sass-lang-icon.svg" alt="Sass">
-                        </div>
-                    </div>
-                </div>
-                <h2 class="title framework-title">Frameworks</h2>
-                <div class="frameworks">
-                    <div class="framework">
-                        <div class="card">
-                            <img src="./svg/springio-icon.svg" alt="Spring">
-                        </div>
-                    </div>
-                    <div class="framework">
-                        <div class="card">
-                            <img src="./svg/hibernate-icon.svg" alt="Hibernate">
-                        </div>
-                    </div>
-                    <div class="framework">
-                        <div class="card">
-                            <img src="./svg/angular-icon.svg" alt="Angular">
-                        </div>
-                    </div>
-                    <div class="framework">
-                        <div class="card">
-                            <img src="./svg/reactjs-icon.svg" alt="React">
-                        </div>
-                    </div>
-                    <div class="framework">
-                        <div class="card">
-                            <img src="./svg/bootstrap-4.svg" alt="Bootstrap">
-                        </div>
-                    </div>
-                    <div class="framework">
-                        <div class="card">
-                            <img src="./svg/tailwindcss-icon.svg" alt="Tailwind CSS">
-                        </div>
-                    </div>
-                </div>
-                <h2 class="title tool-title">Tools & Others</h2>
-                <div class="tools">
-                    <div class="tool">
-                        <div class="card">
-                            <img src="./svg/git-scm-icon.svg" alt="Git">
-                        </div>
-                    </div>
-                    <div class="tool">
-                        <div class="card">
-                            <img src="./svg/visualstudio_code-icon.svg" alt="Visual Studio Code">
-                        </div>
-                    </div>
-                    <div class="tool">
-                        <div class="card">
-                            <img src="./svg/android-icon.svg" alt="Android Studio">
-                        </div>
-                    </div>
-                    <div class="tool">
-                        <div class="card">
-                            <img src="./svg/nodejs-icon.svg" alt="NodeJS">
-                        </div>
-                    </div>
-                    <div class="tool">
-                        <div class="card">
-                            <img src="./svg/adobe-xd.svg" alt="Adobe XD">
-                        </div>
-                    </div>
-                    <div class="tool">
-                        <div class="card">
-                            <img src="./svg/npmjs-icon.svg" alt="NPM">
-                        </div>
-                    </div>
-                    <div class="tool">
-                        <div class="card">
-                            <img src="./svg/amazon_aws-icon.svg" alt="AWS">
-                        </div>
-                    </div>
-                    <div class="tool">
-                        <div class="card">
-                            <img src="./svg/linux-icon.svg" alt="Linux">
-                        </div>
-                    </div>
-                    <div class="tool">
-                        <div class="card">
-                            <img src="./svg/atlassian_jira-icon.svg" alt="Jira">
-                        </div>
-                    </div>
-                </div>
+            <p class="place">Babaria Institute of Technology, Vadodara</p>
+            <hr />
+            <p class="info">
+              Delivered an overview and hands-on session of Spring Framework.
+              Idea was to make the audience familiar with Spring Framework and
+              this advantages.
+            </p>
+          </div>
+          <div class="experience">
+            <div class="post">
+              <h4 class="title">Project Trainee</h4>
+              <p class="duration">Jun 2018 - Apr 2019 (10 mos)</p>
             </div>
-        </section>
-        <section class="section s5">
-            <h1>Contact</h1>
-            <div class="content">
-                <a class="contact" href="mailto:makadiyaparth98@gmail.com">
-                    <img src="./svg/gmail-icon.svg" alt="Mail">
-                    <div class="info">parth makadiya</div>
-                </a>
-                <div class="contact">
-                    <img src="./svg/whatsapp-icon.svg" alt="Mail">
-                    <div class="info">+91 6352935259</div>
-                </div>
-                <a class="contact" href="https://www.facebook.com/parth.makadia.94">
-                    <img src="./svg/facebook-icon.svg" alt="Mail">
-                    <div class="info">Parth Makadia</div>
-                </a>
-                <a class="contact" href="https://www.instagram.com/__parthmakadiya__/">
-                    <img src="./svg/instagram-icon.svg" alt="Mail">
-                    <div class="info">__parthmakadiya__</div>
-                </a>
-                <a class="contact" href="https://twitter.com/ParthMakadiya98">
-                    <img src="./svg/twitter-3.svg" alt="Mail">
-                    <div class="info">@ParthMakadiya98</div>
-                </a>
-                <a class="contact" href="https://www.linkedin.com/in/parth-makadiya-4065a915a/">
-                    <img src="./svg/linkedin-icon-2.svg" alt="Mail">
-                    <div class="info">Parth Makadiya</div>
-                </a>
-                <a class="contact" href="https://github.com/jarvis410">
-                    <img src="./svg/github-icon.svg" alt="Mail">
-                    <div class="info">jarvis410</div>
-                </a>
-                <div class="contact">
-                    <img src="./svg/skype-icon.svg" alt="Mail">
-                    <div class="info">live:makadia.parth123</div>
-                </div>
-                <div class="contact">
-                    <img src="./svg/telegram-icon.svg" alt="Mail">
-                    <div class="info">+91 6352935259</div>
-                </div>
+            <p class="place">Paul Mason Consulting India Pvt. Ltd., Vadodara</p>
+            <hr />
+            <p class="info">
+              Worked on live projects for 8 months. Hands-on Struts, Spring
+              Framework, Hibernate, JSP, MySQL.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h3>Education</h3>
+        <div class="educations">
+          <div class="education">
+            <div class="course">
+              <h4 class="title">B.E. in Computer Engineering</h4>
+              <p class="duration">2015 - 2019 (4 yrs)</p>
             </div>
-        </section>
+            <p class="place">Babaria Institute of Technology, Vadodara</p>
+            <!-- <p class="score">8.75 CGPA</p> -->
+          </div>
+          <div class="education">
+            <div class="course">
+              <h4 class="title">Higher School Certificate</h4>
+              <p class="duration">2014 - 2015 (1 yr)</p>
+            </div>
+            <p class="place">P. P. Savani Chaitanya Vidya Sankul, Surat</p>
+            <!-- <p class="score">87.6 %</p> -->
+          </div>
+          <div class="education">
+            <div class="course">
+              <h4 class="title">Secondary School Certificate</h4>
+              <p class="duration">2012 - 2013 (1 yr)</p>
+            </div>
+            <p class="place">P. P. Savani Chaitanya Vidya Sankul, Surat</p>
+            <!-- <p class="score">8.2 CGPA</p> -->
+          </div>
+        </div>
+      </section>
+
+      <section id="more-skills">
+        <h3>Skills</h3>
+        <h4>Languages</h4>
+        <div class="skills languages">
+          <div class="wrapper">
+            <img src="./svg/java-icon.svg" alt="java-icon" />
+            <img src="./svg/javascript.svg" alt="javascript" />
+            <img
+              src="./svg/typescriptlang-icon.svg"
+              alt="typescriptlang-icon"
+            />
+            <img src="./svg/kotlinlang-icon.svg" alt="kotlinlang-icon" />
+            <img src="./svg/python-5.svg" alt="python-5" />
+            <img src="./svg/html5.svg" alt="html5" />
+            <img src="./svg/css-3.svg" alt="css-3" />
+            <img src="./svg/sass-lang-icon.svg" alt="sass-lang-icon" />
+          </div>
+        </div>
+        <h4>Frameworks</h4>
+        <div class="skills frameworks">
+          <div class="wrapper">
+            <img src="./svg/hibernate-icon.svg" alt="hibernate-icon" />
+            <img src="./svg/reactjs-icon.svg" alt="reactjs-icon" />
+            <img src="./svg/bootstrap-4.svg" alt="bootstrap-4" />
+            <img src="./svg/tailwindcss-icon.svg" alt="tailwindcss-icon" />
+          </div>
+        </div>
+        <h4>Tools & Others</h4>
+        <div class="skills tools">
+          <div class="wrapper">
+            <img src="./svg/git-scm-icon.svg" alt="git-scm-icon" />
+            <img
+              src="./svg/visualstudio_code-icon.svg"
+              alt="visualstudio_code-icon"
+            />
+            <img src="./svg/linux-icon.svg" alt="linux-icon" />
+            <img
+              src="./svg/atlassian_jira-icon.svg"
+              alt="atlassian_jira-icon"
+            />
+            <img src="./svg/npmjs-icon.svg" alt="npmjs-icon" />
+            <img src="./svg/amazon_aws-icon.svg" alt="amazon_aws-icon" />
+            <img src="./svg/nodejs-icon.svg" alt="nodejs-icon" />
+          </div>
+        </div>
+      </section>
     </div>
-    <script src="./js/fullpage.min.js"></script>
-    <script src="./js/app.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
-</body>
-
+  </body>
 </html>

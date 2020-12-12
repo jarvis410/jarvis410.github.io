@@ -1,0 +1,388 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* :focus {
+  outline: none;
+}
+
+body {
+  font-size: 20px;
+  font-family: sans-serif;
+  padding: 1em;
+  background-image: url(../img/bgg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: "Rancho";
+  color: #2d3d5a;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #4a7092;
+  font-variant: small-caps;
+}
+
+hr {
+  margin: 0.25em auto;
+  border-color: #969697;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card, .glass-card, section, .hero .skills-overview img, .contacts .contact img, .experiences .experience, .educations .education, #more-skills .skills .wrapper img {
+  padding: 1em;
+  border-radius: 0.5em;
+}
+
+.glass-card {
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  border: solid 2px transparent;
+  background-clip: padding-box;
+}
+
+.center-col, section, .contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.center-row, .contacts .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.more {
+  font-size: 1rem;
+  font-variant: small-caps;
+  margin-top: 0.25em;
+  color: #1f5fa8;
+}
+
+section {
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  border: solid 2px transparent;
+  background-clip: padding-box;
+}
+
+section + section {
+  margin-top: 1em;
+}
+
+section > div {
+  margin-top: 1em;
+}
+
+.hero .intro .greetings {
+  font-size: 1rem;
+  font-variant: small-caps;
+  color: #473f4d;
+}
+
+.hero .intro .work {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-top: 1em;
+  color: wheat;
+}
+
+.hero .skills-overview {
+  margin-top: 0.5em;
+  overflow-x: scroll;
+}
+
+.hero .skills-overview img {
+  width: 60px;
+  height: 60px;
+  margin: 0.5em;
+  padding: 0.25em;
+  background-color: rgba(245, 250, 255, 0.5);
+}
+
+.hero .skills-overview::-webkit-scrollbar {
+  display: none;
+}
+
+.contacts {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.contacts .contact {
+  padding: 0.5em;
+}
+
+.contacts .contact img {
+  width: 50px;
+  height: 50px;
+  padding: 0.25em;
+  margin: -0.5em;
+}
+
+.contacts .contact .info {
+  font-size: 1rem;
+  margin-left: 1em;
+}
+
+.experiences .experience {
+  background-color: rgba(233, 242, 250, 0.1);
+}
+
+.experiences .experience .post .title {
+  color: #c9c9c9;
+}
+
+.experiences .experience .post .duration {
+  font-size: 0.75rem;
+  color: azure;
+}
+
+.experiences .experience .place {
+  font-size: 1rem;
+  font-weight: 500;
+  font-variant: small-caps;
+  margin-top: 0.25em;
+  color: #201e1e;
+}
+
+.experiences .experience .info {
+  font-size: 1rem;
+}
+
+.experiences .experience + .experience {
+  margin-top: 0.75em;
+}
+
+.educations .education {
+  background-color: rgba(233, 242, 250, 0.1);
+}
+
+.educations .education .course .title {
+  color: #c9c9c9;
+}
+
+.educations .education .course .duration {
+  font-size: 0.75rem;
+  color: azure;
+}
+
+.educations .education .place {
+  font-size: 1rem;
+  font-weight: 500;
+  font-variant: small-caps;
+  margin-top: 0.25em;
+  color: #b4a2a2;
+}
+
+.educations .education + .education {
+  margin-top: 0.75em;
+}
+
+#more-skills {
+  display: block;
+}
+
+#more-skills h3,
+#more-skills h4 {
+  text-align: center;
+}
+
+#more-skills h4 {
+  margin-top: 0.75em;
+  color: antiquewhite;
+}
+
+#more-skills .skills {
+  margin-top: 0.5em;
+  overflow-x: auto;
+}
+
+#more-skills .skills .wrapper {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+#more-skills .skills .wrapper img {
+  width: 55px;
+  height: 55px;
+  margin: 0.25em;
+  padding: 0.25em;
+  background-color: rgba(245, 250, 255, 0.5);
+}
+
+#more-skills .skills::-webkit-scrollbar {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 1000px;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  hr {
+    margin: 0.5em auto;
+  }
+  .center-col, section, .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  section + section {
+    margin-top: 1em;
+  }
+  section > div {
+    margin-top: 1em;
+  }
+  .hero .intro .greetings {
+    font-size: 2rem;
+  }
+  .hero .intro .work {
+    font-size: 1.5rem;
+  }
+  .hero .skills-overview {
+    margin-top: 0.75em;
+  }
+  .hero .skills-overview img {
+    width: 75px;
+    height: 75px;
+    margin: 0.5em;
+    padding: 0.5em;
+  }
+  .contacts {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .contacts .contact {
+    padding: 0.5em;
+  }
+  .contacts .contact img {
+    width: 60px;
+    height: 60px;
+    padding: 0.25em;
+    margin: -0.5em;
+  }
+  .contacts .contact .info {
+    font-size: 1rem;
+    margin-left: 1em;
+  }
+  .experiences .experience .post {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .experiences .experience .post .title {
+    font-size: 1.5rem;
+  }
+  .experiences .experience .post .duration {
+    font-size: 1rem;
+  }
+  .educations {
+    width: 100%;
+  }
+  .educations .education .course {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .educations .education .course .title {
+    font-size: 1.5rem;
+  }
+  .educations .education .course .duration {
+    font-size: 1rem;
+  }
+  #more-skills h3,
+  #more-skills h4 {
+    text-align: center;
+  }
+  #more-skills h4 {
+    margin-top: 1em;
+  }
+  #more-skills .skills {
+    margin-top: 0.75em;
+  }
+  #more-skills .skills .wrapper img {
+    width: 75px;
+    height: 75px;
+    margin: 0.5em;
+    padding: 0.5em;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,401 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  :focus {
+    outline: none;
+  }
+}
+
+body {
+  font-size: 20px;
+  font-family: sans-serif;
+  padding: 1em;
+  background-image: url(../img/bgg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: "Rancho";
+  color: rgb(45, 61, 90);
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: rgb(74, 112, 146);
+  font-variant: small-caps;
+}
+
+hr {
+  margin: 0.25em auto;
+  border-color: rgb(150, 150, 151);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card {
+  padding: 1em;
+  border-radius: 0.5em;
+}
+
+.glass-card {
+  @extend .card;
+
+  backdrop-filter: blur(30px);
+  border: solid 2px transparent;
+  background-clip: padding-box;
+}
+
+.center-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.center-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.more {
+  font-size: 1rem;
+  font-variant: small-caps;
+  margin-top: 0.25em;
+  color: rgb(31, 95, 168);
+}
+
+@mixin glass($blur) {
+  @extend .card;
+
+  backdrop-filter: blur($blur);
+  border: solid 2px transparent;
+  background-clip: padding-box;
+}
+
+@mixin logo($side) {
+  width: $side;
+  height: $side;
+}
+
+section {
+  @include glass(30px);
+  @extend .center-col;
+
+  + section {
+    margin-top: 1em;
+  }
+
+  > div {
+    margin-top: 1em;
+  }
+}
+
+.hero {
+  .intro {
+    .greetings {
+      font-size: 1rem;
+      font-variant: small-caps;
+      color: rgb(71, 63, 77);
+    }
+    .work {
+      font-size: 1.25rem;
+      font-weight: 500;
+      margin-top: 1em;
+      color: wheat;
+    }
+  }
+  .skills-overview {
+    margin-top: 0.5em;
+    overflow-x: scroll;
+
+    img {
+      @extend .card;
+      @include logo(60px);
+
+      margin: 0.5em;
+      padding: 0.25em;
+      background-color: rgba(245, 250, 255, 0.5);
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+.contacts {
+  @extend .center-col;
+
+  align-items: flex-start;
+
+  .contact {
+    @extend .center-row;
+
+    padding: 0.5em;
+
+    img {
+      @include logo(50px);
+      @extend .card;
+
+      padding: 0.25em;
+      margin: -0.5em;
+    }
+
+    .info {
+      font-size: 1rem;
+      margin-left: 1em;
+    }
+  }
+}
+
+.experiences {
+  .experience {
+    @extend .card;
+    background-color: rgba(233, 242, 250, 0.1);
+
+    .post {
+      .title {
+        color: rgb(201, 201, 201);
+      }
+      .duration {
+        font-size: 0.75rem;
+        color: azure;
+      }
+    }
+
+    .place {
+      font-size: 1rem;
+      font-weight: 500;
+      font-variant: small-caps;
+      margin-top: 0.25em;
+      color: rgb(32, 30, 30);
+    }
+
+    .info {
+      font-size: 1rem;
+    }
+
+    + .experience {
+      margin-top: 0.75em;
+    }
+  }
+}
+
+.educations {
+  .education {
+    @extend .card;
+    background-color: rgba(233, 242, 250, 0.1);
+
+    .course {
+      .title {
+        color: rgb(201, 201, 201);
+      }
+      .duration {
+        font-size: 0.75rem;
+        color: azure;
+      }
+    }
+
+    .place {
+      font-size: 1rem;
+      font-weight: 500;
+      font-variant: small-caps;
+      margin-top: 0.25em;
+      color: rgb(180, 162, 162);
+    }
+
+    + .education {
+      margin-top: 0.75em;
+    }
+  }
+}
+
+#more-skills {
+  display: block;
+
+  h3,
+  h4 {
+    text-align: center;
+  }
+  h4 {
+    margin-top: 0.75em;
+    color: antiquewhite;
+  }
+
+  .skills {
+    margin-top: 0.5em;
+    overflow-x: auto;
+
+    .wrapper {
+      display: inline-flex;
+
+      img {
+        @extend .card;
+        @include logo(55px);
+
+        margin: 0.25em;
+        padding: 0.25em;
+        background-color: rgba(245, 250, 255, 0.5);
+      }
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+// media queries
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 1000px;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  hr {
+    margin: 0.5em auto;
+  }
+
+  .center-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  section {
+    + section {
+      margin-top: 1em;
+    }
+
+    > div {
+      margin-top: 1em;
+    }
+  }
+
+  .hero {
+    .intro {
+      .greetings {
+        font-size: 2rem;
+      }
+      .work {
+        font-size: 1.5rem;
+      }
+    }
+    .skills-overview {
+      margin-top: 0.75em;
+
+      img {
+        @include logo(75px);
+
+        margin: 0.5em;
+        padding: 0.5em;
+      }
+    }
+  }
+
+  .contacts {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    .contact {
+      padding: 0.5em;
+
+      img {
+        @include logo(60px);
+
+        padding: 0.25em;
+        margin: -0.5em;
+      }
+
+      .info {
+        font-size: 1rem;
+        margin-left: 1em;
+      }
+    }
+  }
+
+  .experiences {
+    .experience {
+      .post {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+
+        .title {
+          font-size: 1.5rem;
+        }
+        .duration {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  .educations {
+    width: 100%;
+
+    .education {
+      .course {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+
+        .title {
+          font-size: 1.5rem;
+        }
+        .duration {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  #more-skills {
+    h3,
+    h4 {
+      text-align: center;
+    }
+    h4 {
+      margin-top: 1em;
+    }
+
+    .skills {
+      margin-top: 0.75em;
+
+      .wrapper {
+        img {
+          @include logo(75px);
+
+          margin: 0.5em;
+          padding: 0.5em;
+        }
+      }
+    }
+  }
+}
