@@ -25,7 +25,7 @@ h1 {
 
 h3 {
   font-size: 1.5rem;
-  color: rgb(74, 112, 146);
+  color: #f0972d;
   font-variant: small-caps;
 }
 
@@ -109,7 +109,7 @@ section {
       font-size: 1.25rem;
       font-weight: 500;
       margin-top: 1em;
-      color: wheat;
+      color: #e6d6b4;
     }
   }
   .skills-overview {
@@ -122,7 +122,7 @@ section {
 
       margin: 0.5em;
       padding: 0.25em;
-      background-color: rgba(245, 250, 255, 0.5);
+      background-color: whitesmoke;
     }
 
     &::-webkit-scrollbar {
@@ -152,6 +152,7 @@ section {
     .info {
       font-size: 1rem;
       margin-left: 1em;
+      color: #e6d6b4;
     }
   }
 }
@@ -163,7 +164,7 @@ section {
 
     .post {
       .title {
-        color: rgb(201, 201, 201);
+        color: #e6d6b4;
       }
       .duration {
         font-size: 0.75rem;
@@ -176,11 +177,12 @@ section {
       font-weight: 500;
       font-variant: small-caps;
       margin-top: 0.25em;
-      color: rgb(32, 30, 30);
+      color: #b4a2a2;
     }
 
     .info {
       font-size: 1rem;
+      color: #b3cede;
     }
 
     + .experience {
@@ -196,7 +198,7 @@ section {
 
     .course {
       .title {
-        color: rgb(201, 201, 201);
+        color: #e6d6b4;
       }
       .duration {
         font-size: 0.75rem;
@@ -209,7 +211,7 @@ section {
       font-weight: 500;
       font-variant: small-caps;
       margin-top: 0.25em;
-      color: rgb(180, 162, 162);
+      color: #b4a2a2;
     }
 
     + .education {
@@ -243,7 +245,7 @@ section {
 
         margin: 0.25em;
         padding: 0.25em;
-        background-color: rgba(245, 250, 255, 0.5);
+        background-color: whitesmoke;
       }
     }
 
@@ -328,14 +330,6 @@ section {
 
       img {
         @include logo(60px);
-
-        padding: 0.25em;
-        margin: -0.5em;
-      }
-
-      .info {
-        font-size: 1rem;
-        margin-left: 1em;
       }
     }
   }
